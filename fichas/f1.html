@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mental Games</title>
+<meta charset="utf-8">
+<meta name="description"
+	content="Esto es un juego web orientado a la estimulacion cognitiva para adultos">
+<meta name="author" content="Edgar Basurto">
+<link rel="icon" href="../mentalgame.ico">
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+</head>
+<body>
+	<header>
+	<div class="wrapper">
+		<img class="logo" alt="JuegosMentales" src="../mentalgames2.png">
+
+		<nav>
+			<a href="../index.html">Inicio</a>
+			<span id="puntos"></span>
+			<span id="tiempo"></span>
+		</nav>
+		</div>
+	</header>
+
+	<h1>FICHA #1</h1>
+	<div class="contenedor pointer">
+		<div class="encabezado">
+			<p>
+				<b>Selecciona todas las imagenes que encuentres como esta:</b><img
+					alt="fruta" src="../imagenes/m5/m5-05.png" class="item" id="frt5">
+			</p>
+
+		</div>
+	</div>
+	<div class="contenedor">
+
+
+		<div class="panelJuegoM5" id="player">
+		<div class="filaPanelJuego">
+			<img alt="fruta" src="../imagenes/m5/m5-01.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-02.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-03.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-01.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			</div>
+			<div class="filaPanelJuego">
+			<img alt="fruta" src="../imagenes/m5/m5-03.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-01.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-04.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-05.png" id="frt5" class="itemM5" onClick="cambiaColor(this)">
+			</div>
+			<div class="filaPanelJuego">
+			<img alt="fruta" src="../imagenes/m5/m5-04.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-05.png" id="frt5" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-02.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-04.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			</div>
+			<div class="filaPanelJuego">
+			<img alt="fruta" src="../imagenes/m5/m5-05.png" id="frt5" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-04.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-03.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-02.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			</div>
+			<div class="filaPanelJuego">
+			<img alt="fruta" src="../imagenes/m5/m5-03.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-02.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-01.png" id="frt1" class="itemM5" onClick="cambiaColor(this)">
+			<img alt="fruta" src="../imagenes/m5/m5-05.png" id="frt5" class="itemM5" onClick="cambiaColor(this)">
+			</div>
+			
+			
+		</div>
+
+	</div>
+	<h2>
+		<a href="#openModalPuntaje" onclick="pausarConteo()"><img alt="avanzar" src="../play.jpg" width="60px"></a>
+	</h2>
+					<div id="openModalPuntaje" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>RESULTADOS</h2>
+								
+									<h3 id="puntaje" class="linePoint"></h3>
+									<h3 id="puntaje2" class="linePoint2"></h3>
+									<h3 id="time" class="linePoint"></h3>
+									<h3 id="aciertos" class="linePoint"></h3>
+									<h3 id="errores" class="linePoint"></h3>
+								
+								<div class="modalButton">
+									<a href="f1.html" class="next">REINTENTAR</a>
+									<a href="f2.html" class="next">SIGUIENTE</a>
+								</div>
+						</div>
+					</div>
+	
+	<script src="../js/scriptF1.js"></script>
+</body>
+</html>
