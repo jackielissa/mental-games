@@ -19,18 +19,17 @@ function cambiaColor(x) {
 	x.style.background = "rgba(100, 149, 237, 0.2)";
 	x.style.boxShadow = '0 0 10px #44f';
 	x.style.pointerEvents = "none";
-	if (x.id === "item21-3") {
+	if (x.id === "item23-3"||x.id === "item23-9") {
 		aciertos++;
-	}
-	if (x.id !== "item21-3") {
+	} else {
 		errores++;
 	}
- }
+}
 
 function pausarConteo() {
 	clearInterval(a);
 	
-	if (aciertos === 1 && errores === 0) {
+	if (aciertos === 2 && errores === 0) {
 		document.getElementById("puntaje").innerHTML = "<b>¡NIVEL COMPLETADO!</b>";
 	} else {
 		if (aciertos === 0 && errores === 0) {
