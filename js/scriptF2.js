@@ -27,6 +27,7 @@ function obj(id, select) {
 
 function cambiaColor(x) {
 	x.style.background = "rgba(100, 149, 237, 0.2)";
+	x.style.boxShadow = '0 0 10px #44f';
 	x.style.pointerEvents = "none";
 	var objeto = new obj(x.id, select = true);
 	objetos.push(objeto);

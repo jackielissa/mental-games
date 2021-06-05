@@ -17,6 +17,7 @@ function sumarTiempo() {
 
 function cambiaColor(x) {
 	x.style.background = "rgba(100, 149, 237, 0.2)";
+	x.style.boxShadow = '0 0 10px #44f';
 	x.style.pointerEvents = "none";
 	if (x.id === "item22-3") {
 		aciertos++;
