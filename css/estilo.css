@@ -132,10 +132,8 @@ p {
 
 .filaPanelJuegom18 {
 	display: flex;
-	width: 100%;
 	overflow: hidden;
 	z-index: 0;
-	front-weight: 700;
 	float: left;
 	margin-left: 40%;
 	margin-top: 15px;
@@ -144,10 +142,8 @@ p {
 
 .filaPanelJuegom19 {
 	display: flex;
-	width: 100%;
 	overflow: hidden;
 	z-index: 0;
-	front-weight: 700;
 	float: left;
 	margin-left: 40%;
 	margin-top: 8px;

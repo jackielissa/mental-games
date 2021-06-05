@@ -18,10 +18,10 @@ function sumarTiempo() {
 function cambiaColor(x) {
 	x.style.background = "rgba(100, 149, 237, 0.2)";
 	x.style.pointerEvents = "none";
-	if (x.id === "item21-3") {
+	if (x.id === "item22-3") {
 		aciertos++;
 	}
-	if (x.id !== "item21-3") {
+	if (x.id !== "item22-3") {
 		errores++;
 	}
  }
