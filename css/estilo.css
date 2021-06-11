@@ -142,6 +142,78 @@ p {
 .itemM23:hover {
 	transform: scale(1.1);
 }
+
+
+/*
+ * propiedades de las cajas (arrastrables)
+ */
+div[id ^='caja'] {
+	
+	height: 30px;
+	width: 100px;
+	border: 3px solid rgba(204, 0, 0, 1);
+	margin:5px auto;
+	padding:5px;
+	font-size: 15px;
+	
+	background: rgba(100, 149, 237, 0.2);
+	border-radius: 20px;
+	position: relative;
+
+	cursor: pointer;
+}
+/*
+div[id ^='caja']:after {
+	content:"  Fuera del contenedor"
+}
+*/
+
+/*
+ * propiedades que van a tomar el elemento arrastrable luego de que  este se suelte dentro de su contenedor
+ */
+div[id ^='contenedorPrinc'] div[id ^='caja'] {	
+	background:rgba(0,178,255,0.8);
+	border: 3px solid rgba(0,178,255, 1);
+	float:right;
+}
+div[id ^='contenedorPrinc'] div[id ^='caja'] span {
+	color:#FFF;
+}
+/*
+
+div[id ^='contenedorPrinc'] div[id ^='caja']:after {
+	content:"  Dentro del contenedor  "
+}
+*/
+/*
+ * propiedades del contenedor
+ */
+div[id ^='contenedorPrinc'] {
+	width:120px;
+	height:50px;
+	background:rgba(38,104,127,0.8);
+	border: 3px solid rgba(38,104,127, 1);
+	margin: 10px;
+	padding:5px;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+
+.hold {
+	border: solid #ccc 4px;
+}
+
+.hovered {
+	background: #f4f4f4;
+	border-style: dashed;
+}
+
+.invisible {
+	display: none;
+}
+
+
 .itemM18 h3{
 	margin-bottom:10px;
 	margin-left: 10px;
@@ -319,7 +391,7 @@ header {
 }
 
 .icon span:hover {
-	color: #black;
+	color: black;
 	transform: scale(1.1);
 }
 
@@ -332,7 +404,7 @@ header {
 }
 
 .button a:hover {
-	color: #black;
+	color: black;
 	transform: scale(1.1);
 }
 
